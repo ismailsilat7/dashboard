@@ -135,6 +135,7 @@ li > img {
 
 .search input:focus {
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+    outline: 1px solid var(--sidebarBG);
 }
 
 .notification img {
