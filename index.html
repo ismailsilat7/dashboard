@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Ismail Silat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="dashboard-head">
-                <img src="/" alt="Dashboard Icon"><h1>Dashboard</h1>
+                <img src="./images/dashboard-icon.svg" alt="Dashboard Icon" class="dashboard-icon"><h1>Dashboard</h1>
             </div>
-            <div class="main-icons">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-            </div>
-            <div class="other-icons">
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
+            <div class="icons">
+                <div class="main-icons">
+                    <ul>
+                        <li> <img src="./images/home.svg" alt="icon"> <a href="">Home</a></li>
+                        <li> <img src="./images/profile.svg" alt="icon"> <a href="">Profile</a></li>
+                        <li> <img src="./images/message.svg" alt="icon"> <a href="">Messages</a></li>
+                        <li> <img src="./images/history.svg" alt="icon"> <a href="">History</a></li>
+                        <li> <img src="./images/tasks.svg" alt="icon"> <a href="">Tasks</a></li>
+                        <li> <img src="./images/communities.svg" alt="icon"> <a href="">Communities</a></li>
+                    </ul>
+                </div>
+                <div class="other-icons">
+                    <ul>
+                        <li> <img src="./images/settings.svg" alt="icon"> <a href="">Settings</a></li>
+                        <li> <img src="./images/support.svg" alt="icon"> <a href="">Support</a></li>
+                        <li> <img src="./images/privacy.svg" alt="icon"> <a href="">Privacy</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="head">
-            <div class="search"></div>
-            <div class="notification"></div>
-            <div class="side-profile"><img src="./" alt="Profile Pic"><p>Ismail Silat</p></div>
+            <div class="search"><img src="./images/search.svg" alt="search-icon"><input type="text" placeholder="Search Dashboard"></div>
+            <div class="side-profile">
+                <div class="notification"><img src="./images/notification.svg" alt="Notification Icon"></div>
+                <div class="pic-name">
+                    <img src="./images/profile-pic.png" alt="Profile Pic" class="side-profile-pic"><p>Ismail Silat</p>
+                </div>
+            </div>
             <div class="main-profile">
-                <img src="./" alt="Profile Pic">
+                <img src="./images/profile-pic.png" alt="Profile Pic">
                 <div class="greet">
                     <p>Hi there,</p>
                     <h2>Ismail Silat (@ismailsilat7)</h2>
@@ -50,70 +59,72 @@
         <div class="main">
             <div class="projects">
                 <h3>Your Projects</h3>
-                <div class="project-1 project-card">
-                    <div class="project-desc">
-                        <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, libero voluptatibus! Minus fuga facere quaerat!</p>
+                <div class="cards">
+                    <div class="project-1 project-card">
+                        <div class="project-desc">
+                            <h4>Super Cool Project</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut error facere quam earum voluptatibus odit temporibus perferendis iste dolore architecto.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <img src="./images/star.svg" alt="Star Project">
+                            <img src="./images/share.svg" alt="Share Project">
+                            <a href="https://www.github.com/ismailsilat7" target="_blank"><img src="./images/github.svg" alt="Github Repository"></a>
+                        </div>
                     </div>
-                    <div class="project-buttons">
-                        <buttons>Star</buttons>
-                        <buttons>Eye</buttons>
-                        <buttons>Share</buttons>
+                    <div class="project-2 project-card">
+                        <div class="project-desc">
+                            <h4>Less Cool Project</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, qui? Nesciunt, soluta?</p>
+                        </div>
+                        <div class="project-buttons">
+                            <img src="./images/star.svg" alt="Star Project">
+                            <img src="./images/share.svg" alt="Share Project">
+                            <a href="https://www.github.com/ismailsilat7" target="_blank"><img src="./images/github.svg" alt="Github Repository"></a>
+                        </div>                   
                     </div>
-                </div>
-                <div class="project-2 project-card">
-    <div class="project-desc">
-                        <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, libero voluptatibus! Minus fuga facere quaerat!</p>
+                    <div class="project-3 project-card">
+                        <div class="project-desc">
+                            <h4>Impossible App</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis beatae optio voluptates autem quam.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <img src="./images/star.svg" alt="Star Project">
+                            <img src="./images/share.svg" alt="Share Project">
+                            <a href="https://www.github.com/ismailsilat7" target="_blank"><img src="./images/github.svg" alt="Github Repository"></a>
+                        </div>
                     </div>
-                    <div class="project-buttons">
-                        <buttons>Star</buttons>
-                        <buttons>Eye</buttons>
-                        <buttons>Share</buttons>
-                    </div>                    
-                </div>
-                <div class="project-3 project-card">
-                    <div class="project-desc">
-                        <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, libero voluptatibus! Minus fuga facere quaerat!</p>
+                    <div class="project-4 project-card">
+                        <div class="project-desc">
+                            <h4>Easy Peasy App</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus, quidem maiores officia illo pariatur facilis reprehenderit possimus magni eveniet!</p>
+                        </div>
+                        <div class="project-buttons">
+                            <img src="./images/star.svg" alt="Star Project">
+                            <img src="./images/share.svg" alt="Share Project">
+                            <a href="https://www.github.com/ismailsilat7" target="_blank"><img src="./images/github.svg" alt="Github Repository"></a>
+                        </div>
                     </div>
-                    <div class="project-buttons">
-                        <buttons>Star</buttons>
-                        <buttons>Eye</buttons>
-                        <buttons>Share</buttons>
+                    <div class="project-5 project-card">
+                        <div class="project-desc">
+                            <h4>Ad Generator</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque maxime ullam soluta illo ipsum odio possimus repellendus magnam!</p>
+                        </div>
+                        <div class="project-buttons">
+                            <img src="./images/star.svg" alt="Star Project">
+                            <img src="./images/share.svg" alt="Share Project">
+                            <a href="https://www.github.com/ismailsilat7" target="_blank"><img src="./images/github.svg" alt="Github Repository"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="project-4 project-card">
-                    <div class="project-desc">
-                        <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, libero voluptatibus! Minus fuga facere quaerat!</p>
-                    </div>
-                    <div class="project-buttons">
-                        <buttons>Star</buttons>
-                        <buttons>Eye</buttons>
-                        <buttons>Share</buttons>
-                    </div>
-                </div>
-                <div class="project-5 project-card">
-                    <div class="project-desc">
-                        <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, libero voluptatibus! Minus fuga facere quaerat!</p>
-                    </div>
-                    <div class="project-buttons">
-                        <buttons>Star</buttons>
-                        <buttons>Eye</buttons>
-                        <buttons>Share</buttons>
-                    </div>
-                </div>
-                <div class="project-6 project-card">
-                    <div class="project-desc">
-                        <h4>Super Cool Project</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, libero voluptatibus! Minus fuga facere quaerat!</p>
-                    </div>
-                    <div class="project-buttons">
-                        <buttons>Star</buttons>
-                        <buttons>Eye</buttons>
-                        <buttons>Share</buttons>
+                    <div class="project-6 project-card">
+                        <div class="project-desc">
+                            <h4>Ad Blocker</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id doloremque beatae delectus temporibus officia?</p>
+                        </div>
+                        <div class="project-buttons">
+                            <img src="./images/star.svg" alt="Star Project">
+                            <img src="./images/share.svg" alt="Share Project">
+                            <a href="https://www.github.com/ismailsilat7" target="_blank"><img src="./images/github.svg" alt="Github Repository"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,44 +133,50 @@
                 <div class="announcements">
                     <div>
                         <h4>Site Maintenance</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, corporis praesentium. Suscipit, vitae...</p>
+                        <a href="./">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, corporis praesentium. Suscipit, vitae...</p>
+                        </a>
                     </div>
-                    <br>
+                    <hr>
                     <div>
                         <h4>Community Share Day</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus minima architecto culpa animi...</p>
+                        <a href="./">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus minima architecto culpa animi...</p>
+                        </a>
                     </div>
-                    <br>
+                    <hr>
                     <div>
                         <h4>Updated Privacy Policy</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus assumenda dolores corrupti maiores...</p>
+                        <a href="./">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus assumenda dolores corrupti maiores...</p>
+                        </a>
                     </div>
                 </div>
                 <h3>Trending</h3>
                 <div class="trending">
                     <div class="profile">
-                        <img src="./" alt="tegan-profile-pic">
+                        <img src="./images/other-user1.png" alt="tegan-profile-pic">
                         <div class="trendy">
                             <p>@tegan</p>
                             <p>World Peace Builder</p>
                         </div>
                     </div>
                     <div class="profile">
-                        <img src="./" alt="morgan-profile-pic">
+                        <img src="./images/profile-pic.png" alt="morgan-profile-pic">
                         <div class="trendy">
                             <p>@morgan</p>
                             <p>Super Cool Project</p>
                         </div>
                     </div>
                     <div class="profile">
-                        <img src="./" alt="kendal-profile-pic">
+                        <img src="./images/other-user-2.png" alt="kendal-profile-pic">
                         <div class="trendy">
                             <p>@kendal</p>
-                            <p>Life CHanging App</p>
+                            <p>Life Changing App</p>
                         </div>
                     </div>
                     <div class="profile">
-                        <img src="./" alt="alex-profile-pic">
+                        <img src="./images/other-user-3.png" alt="alex-profile-pic">
                         <div class="trendy">
                             <p>@alex</p>
                             <p>No Traffic Master</p>
