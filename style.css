@@ -1,0 +1,352 @@
+:root {
+    --sidebarBG: #344E41;
+    --sidebarText: #F8FAFC;
+    --headerBG: #EDEDED;
+    --headerText: #2C3E50;
+    --mainBG: #FFFFFF;
+    --textMain: #2C3E50;
+    --textDesc: #748783;
+    --profileBG: #f39c12;
+    --searchBG: #E2E8F0;
+    --shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.12);
+    --transition: 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    --scale: scale(1.05);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 100vh;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: span 2;
+    padding: 20px;
+    background-color: var(--sidebarBG);
+    color: var(--sidebarText);
+}
+
+.dashboard-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--sidebarText);
+    transition: var(--transition);
+}
+
+a:hover {
+    transform: var(--scale);
+    text-decoration: underline;
+}
+
+.dashboard-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.dashboard-icon + h1 {
+    font-size: 25px;
+}
+
+li > img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.other-icons {
+    margin-top: 50px;
+}
+
+.head {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 70px 100px;
+    background-color: var(--headerBG);
+    padding: 5px 35px;
+    align-items: center;
+    box-shadow: var(--shadow);
+    z-index: 2;
+    color: var(--headerText);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search img {
+    width: 25px;
+    margin-right: 15px;
+    transition: var(--transition);
+}
+
+.search img:hover {
+    cursor: pointer;
+    transform: var(--scale);
+}
+
+.search input {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 18px;
+    width: 85%;
+    outline-offset: 2px;
+    background-color: var(--sidebarBG);
+    transition: var(--transition);
+    color: var(--sidebarText);
+}
+
+.search input::placeholder {
+    color: var(--textDesc);
+}
+
+.search input:focus {
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.notification img {
+    width: 20px;
+    margin-right: 40px;
+    transition: var(--transition);
+}
+
+.notification img:hover {
+    transform: var(--scale);
+    cursor: pointer;
+}
+
+
+.side-profile {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pic-name {
+    display: flex;
+    align-items: center;
+}
+
+.pic-name p {
+    font-weight: bold;
+}
+
+.side-profile .side-profile-pic {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.main {
+    color: var(--headerText);
+}
+
+.main-profile {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+}
+
+.main-profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.main-profile p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-profile h2 {
+    font-size: 22px;
+}
+
+.head-buttons {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.head-buttons button {
+    background-color: var(--sidebarBG);
+    color: var(--sidebarText);
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: 1px solid var(--sidebarBG);
+    transition: var(--transition);
+}
+
+.head-buttons button:hover {
+    color: var(--sidebarBG);
+    background-color: var(--sidebarText);
+    cursor: pointer;
+}
+
+.main {
+    grid-column: 2;
+    background-color: var(--mainBG);
+    padding: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.projects {
+    grid-column: 1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    gap: 2em;
+    margin: 20px 20px 0 0;
+}
+
+.main:hover .project-card{
+    border-bottom: 6px solid var(--profileBG);
+}
+
+.project-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--sidebarText);
+    border-radius: 10px;
+    border-left: 6px solid var(--profileBG);
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), border 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    box-shadow: var(--shadow);
+}
+
+.project-card:hover {
+    border: 6px solid var(--profileBG);
+    cursor: pointer;
+}
+
+.project-card h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 12px;
+    color: var(--textDesc);
+}
+
+.project-buttons {
+    align-self: flex-end;
+}
+
+.project-buttons img {
+    width: 25px;
+    margin-left: 10px;
+    transition: var(--transition);
+}
+
+.project-buttons img:hover {
+    transform: scale(1.1);
+}
+
+.announcements, .trending {
+    padding: 20px 25px;
+    background-color: var(--sidebarText);
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: var(--shadow);
+}
+
+.announcements hr {
+    margin: 15px 0;
+}
+
+.announcements h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.announcements p {
+    font-size: 12px;
+    color: var(--textDesc);
+}
+
+.announcements p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.trending {
+    display: grid;
+    gap: 1.125rem;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.profile p {
+    font-size: 16px;
+}
+
+.profile p:last-child {
+    font-size: 14px;
+    color: var(--textDesc);
+    margin-top: 5px;
+}
+
+.profile p:last-child:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    border-color: var(--textDesc);
+}
+
